@@ -475,7 +475,7 @@
       loveGameStarted = true;
 
       const gameSize = 12;
-      const gameWords = ["LOVE", "HEART", "COUPLE", "SWEET", "KISS", "HUG", "DATE", "FOREVER"];
+      const gameWords = ["LOVE", "HEART", "COUPLE", "SWEET", "KISS", "HUG", "DATE", "FOREVER","GIFT","FLOWERS","CHOCOLATE","HUNGANDMY"];
       const gameBoard = Array.from({ length: gameSize }, () => Array(gameSize).fill(""));
       const gameDirections = [[0, 1], [1, 0], [1, 1], [1, -1]];
       const gameLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -622,7 +622,7 @@
           document.getElementById("love-word-" + found).classList.add("done");
           messageEl.textContent = "Đúng rồi! Tìm thấy: " + found + " 💖";
           if (document.querySelectorAll(".love-word.done").length === gameWords.length) {
-            messageEl.textContent = "Hoàn thành rồi! Tình yêu quá đỉnh 💝🎉";
+            messageEl.textContent = "Hoàn thành rồi! Em siêu quá 💝🎉";
           }
         } else {
           clearSelection();
